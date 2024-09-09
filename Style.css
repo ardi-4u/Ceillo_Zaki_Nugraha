@@ -1,0 +1,154 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+}
+
+.wrapper2 {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.849);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.021);
+}
+
+.logo2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    background-color: #ffffff;
+}
+
+.start > main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.start > main > h1 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.start > main > p {
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.biodata-card {
+    display: flex;
+    align-items: center;
+    width: 22rem;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.biodata-img {
+    width: 40%;
+    height: auto; 
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.biodata-info {
+    flex: 1;
+}
+
+.biodata-title {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.biodata-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.angkatan {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    font-size: 1.0rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 18rem; /* Fixed width for all screen sizes */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 12rem; 
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: 14rem;
+    }
+    .card-img-top {
+        height: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 12rem;
+    }
+    .card-img-top {
+        height: 8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+    }
+
+    .card-img-top {
+        height: 10rem;
+    }
+
+    .angkatan {
+        justify-content: center;
+    }
+}
